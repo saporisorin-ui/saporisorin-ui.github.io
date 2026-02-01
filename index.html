@@ -4,31 +4,45 @@
     <meta charset="UTF-8">
     <title>EA-uri MT4 – Sorin</title>
     <style>
-        body { font-family: Arial; max-width: 900px; margin: auto; padding: 20px; background:#f9f9f9; }
-        h1 { color: #222; }
-        .ea { border: 1px solid #ddd; padding: 15px; margin-bottom: 15px; background: #fff; border-radius: 8px; }
-        a { color: #0066cc; text-decoration: none; }
+        body { font-family: Arial, sans-serif; max-width: 1000px; margin: auto; padding: 20px; background: #f5f5f5; }
+        h1 { color: #222; text-align: center; }
+        .ea-container { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+        .ea { background: #fff; border-radius: 10px; padding: 15px; width: 300px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .ea img { max-width: 100%; border-radius: 5px; }
+        .ea h2 { font-size: 1.2em; margin-top: 10px; }
+        .ea p { font-size: 0.95em; color: #555; }
+        .download-btn { display: inline-block; margin-top: 10px; padding: 8px 15px; background: #0066cc; color: #fff; border-radius: 5px; text-decoration: none; }
+        .download-btn:hover { background: #004999; }
+        footer { text-align: center; margin-top: 40px; font-size: 0.9em; color: #888; }
     </style>
 </head>
 <body>
 
-<h1>Expert Advisors MT4</h1>
-<p>EA-uri create de mine – MT4 / XAUUSD / Smart Money</p>
+<h1>Expert Advisors MT4 – Sorin</h1>
+<p style="text-align:center;">Aici găsiți EA-urile mele pentru MT4, gata de download și testare. ⚠️ Doar în scop educațional.</p>
 
-<div class="ea">
-    <h2>EMA Strategy</h2>
-    <p>Strategie bazată pe EMA 20/50 + MTF + trailing stop.</p>
-    <a href="ea/ema-strategy/EMA_Strategy.mq4">⬇ Download MQ4</a>
+<div class="ea-container">
+    <!-- EMA Strategy -->
+    <div class="ea">
+        <img src="assets/images/ema-strategy.png" alt="EMA Strategy Screenshot">
+        <h2>EMA Strategy</h2>
+        <p>Strategie bazată pe EMA 20/50 + MTF + trailing stop. Perfect pentru XAUUSD pe M5/M15.</p>
+        <a href="ea/ema-strategy/EMA_Strategy.mq4" class="download-btn">⬇ Download MQ4</a>
+    </div>
+
+    <!-- Trend ChoCH EA -->
+    <div class="ea">
+        <img src="assets/images/trend-choch.png" alt="Trend ChoCH Screenshot">
+        <h2>Trend ChoCH EA</h2>
+        <p>Smart Money – ChoCH, BOS și structură de trend pentru intrări precise.</p>
+        <a href="ea/trend-choch/Trend_ChoCH_EA.mq4" class="download-btn">⬇ Download MQ4</a>
+    </div>
 </div>
 
-<div class="ea">
-    <h2>Trend ChoCH EA</h2>
-    <p>Smart Money – ChoCH, BOS, structură.</p>
-    <a href="ea/trend-choch/Trend_ChoCH_EA.mq4">⬇ Download MQ4</a>
-</div>
-
-<hr>
-<p>⚠️ Doar în scop educațional. Tradingul implică risc.</p>
+<footer>
+    ⚠️ Toate EA-urile sunt distribuite în scop educațional. Tradingul implică risc de pierdere a capitalului.
+</footer>
 
 </body>
 </html>
+
