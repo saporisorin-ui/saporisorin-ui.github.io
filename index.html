@@ -1,110 +1,214 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-    <meta charset="UTF-8">
-    <title>EA-uri MT4 – Sorin</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        /* Reset simplu */
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+<meta charset="UTF-8">
+<title>Sorin | MT4 Expert Advisors</title>
 
-        body {
-            font-family: 'Roboto', sans-serif;
-            background: linear-gradient(to right, #1e3c72, #2a5298);
-            color: #fff;
-            min-height: 100vh;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-        header {
-            text-align: center;
-            padding: 60px 20px 40px 20px;
-        }
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
 
-        header h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-            color: #ffd700;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at top, #1a1a1a, #0b0b0b);
+    color: #e6e6e6;
+    min-height: 100vh;
+}
 
-        header p {
-            font-size: 1.2em;
-            max-width: 700px;
-            margin: auto;
-            line-height: 1.6;
-        }
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 90px 20px 70px;
+}
 
-        section {
-            background: #f5f5f5;
-            color: #222;
-            padding: 60px 20px;
-            border-radius: 20px 20px 0 0;
-            margin-top: -40px;
-        }
+.hero h1 {
+    font-size: 3.2em;
+    color: #d4af37;
+    letter-spacing: 2px;
+}
 
-        section h2 {
-            text-align: center;
-            font-size: 2em;
-            margin-bottom: 30px;
-            color: #1e3c72;
-        }
+.hero p {
+    max-width: 800px;
+    margin: 25px auto;
+    font-size: 1.15em;
+    color: #ccc;
+}
 
-        section p {
-            max-width: 800px;
-            margin: 0 auto 20px auto;
-            font-size: 1.1em;
-            line-height: 1.6;
-            text-align: center;
-        }
+.badge {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 18px;
+    border: 1px solid #d4af37;
+    border-radius: 25px;
+    color: #d4af37;
+    font-size: 0.9em;
+}
 
-        .btn-primary {
-            display: inline-block;
-            background: #1e3c72;
-            color: #fff;
-            padding: 12px 25px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 20px;
-            transition: 0.3s;
-        }
+/* SECTIONS */
+section {
+    padding: 70px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
 
-        .btn-primary:hover {
-            background: #2a5298;
-        }
+section h2 {
+    color: #d4af37;
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 2.1em;
+}
 
-        footer {
-            text-align: center;
-            padding: 40px 20px;
-            font-size: 0.9em;
-            color: #ccc;
-        }
-    </style>
+/* ABOUT */
+.about p {
+    text-align: center;
+    line-height: 1.7;
+    color: #cfcfcf;
+}
+
+/* EA CARDS */
+.ea-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.ea-card {
+    background: linear-gradient(145deg, #121212, #0d0d0d);
+    border: 1px solid #2a2a2a;
+    border-radius: 16px;
+    padding: 35px 25px;
+    text-align: center;
+    position: relative;
+}
+
+.ea-card h3 {
+    color: #d4af37;
+    margin-bottom: 15px;
+}
+
+.ea-card p {
+    font-size: 0.95em;
+    color: #bdbdbd;
+}
+
+.lock {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+/* ROADMAP */
+.roadmap ul {
+    list-style: none;
+    max-width: 700px;
+    margin: auto;
+}
+
+.roadmap li {
+    padding: 15px;
+    border-left: 3px solid #d4af37;
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+/* CONTACT */
+.contact {
+    text-align: center;
+}
+
+.contact a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #0b0b0b;
+    background: #d4af37;
+    padding: 14px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    background: #b8962e;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 0.85em;
+    color: #888;
+}
+</style>
 </head>
+
 <body>
 
-<header>
-    <h1>Welcome to Sorin's MT4 EA Hub</h1>
-    <p>Aici vei găsi viitoarele mele Expert Advisors pentru MetaTrader 4, create pentru XAUUSD și alte instrumente. Site-ul este în curs de dezvoltare, iar EA-urile vor fi adăugate în curând. Rămâi aproape pentru cele mai interesante strategii!</p>
-    <a href="#about" class="btn-primary">Despre site</a>
-</header>
+<!-- HERO -->
+<div class="hero">
+    <h1>SORIN • MT4 AUTOMATION</h1>
+    <p>Professional Expert Advisors for MetaTrader 4, focused on disciplined execution, structure-based strategies and risk-aware automation.</p>
+    <div class="badge">Private Development • Educational Purpose</div>
+</div>
 
-<section id="about">
-    <h2>Despre acest proiect</h2>
-    <p>Acest site este creat pentru a centraliza toate Expert Advisors dezvoltate de mine, oferind o prezentare clară și ușor de accesat pentru fiecare EA. Totul este în scop educațional și pentru testare pe conturi demo.</p>
-    <p>Mai jos, în viitor, vei putea descărca EA-urile și vedea descrierea, screenshot-urile și instrucțiunile de instalare. Site-ul este 100% gratuit și sigur.</p>
-    <a href="#contact" class="btn-primary">Contact</a>
+<!-- ABOUT -->
+<section class="about">
+<h2>Despre proiect</h2>
+<p>
+Acest site este dedicat dezvoltării și prezentării Expert Advisors creați pentru MetaTrader 4.
+Accentul este pus pe structură de piață, trend, Smart Money Concepts și controlul riscului.
+<br><br>
+EA-urile sunt testate riguros și publicate gradual, exclusiv în scop educațional și de cercetare.
+</p>
 </section>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Pentru întrebări sau colaborări, poți să îmi trimiți un mesaj prin email sau prin profilul GitHub. Voi răspunde cât mai rapid.</p>
-    <a href="mailto:sorin_orry@yahoo.com" class="btn-primary">Trimite un email</a>
+<!-- EA PLACEHOLDER -->
+<section>
+<h2>Expert Advisors</h2>
+<div class="ea-grid">
+
+<div class="ea-card">
+<div class="lock">🔒</div>
+<h3>Private EA</h3>
+<p>Strategy under development.<br>Currently in private testing phase.</p>
+</div>
+
+<div class="ea-card">
+<div class="lock">🔒</div>
+<h3>Smart Structure EA</h3>
+<p>Market structure & liquidity-based logic.<br>Release planned soon.</p>
+</div>
+
+<div class="ea-card">
+<div class="lock">🔒</div>
+<h3>Trend Automation</h3>
+<p>Multi-timeframe trend confirmation.<br>Work in progress.</p>
+</div>
+
+</div>
+</section>
+
+<!-- ROADMAP -->
+<section class="roadmap">
+<h2>Ce urmează</h2>
+<ul>
+<li>Publicarea primelor EA-uri pentru testare demo</li>
+<li>Documentație clară și exemple de utilizare</li>
+<li>Optimizări și versiuni îmbunătățite</li>
+<li>Posibil acces privat pentru utilizatori selectați</li>
+</ul>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+<h2>Contact</h2>
+<p>Pentru întrebări, feedback sau colaborări:</p>
+<a href="mailto:sorin_orry@yahoo.com">sorin_orry@yahoo.com</a>
 </section>
 
 <footer>
-    © 2026 Sorin. Toate drepturile rezervate. ⚠️ Site-ul este în scop educațional. Tradingul implică risc.
+⚠️ Toate materialele sunt oferite exclusiv în scop educațional. Tradingul implică risc.
 </footer>
 
 </body>
 </html>
+
