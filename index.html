@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>Sorin | MT4 Expert Advisors</title>
@@ -90,17 +90,9 @@ section h2 {
   background: linear-gradient(145deg, #121212, #0d0d0d);
   border: 1px solid #2a2a2a;
   border-radius: 18px;
-  padding: 30px 25px 35px;
+  padding: 35px 25px;
   text-align: center;
   box-shadow: 0 0 30px rgba(212,175,55,0.15);
-}
-
-.ea-card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 20px;
 }
 
 .ea-card h3 {
@@ -112,6 +104,11 @@ section h2 {
   font-size: 0.95em;
   color: #bdbdbd;
   margin-bottom: 25px;
+}
+
+.lock {
+  font-size: 2em;
+  margin-bottom: 10px;
 }
 
 .btn {
@@ -127,6 +124,19 @@ section h2 {
 
 .btn:hover {
   opacity: 0.9;
+}
+
+/* INFO SECTION */
+.info {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+  color: #ccc;
+}
+
+.info h3 {
+  color: #d4af37;
+  margin-bottom: 15px;
 }
 
 /* ROADMAP */
@@ -187,55 +197,55 @@ footer {
 
 <!-- ABOUT -->
 <section class="about">
-  <h2>Despre proiect</h2>
+  <h2>About the Project</h2>
   <p>
-    Acest site este dedicat dezvoltării și prezentării Expert Advisors creați pentru MetaTrader 4.
-    Accentul este pus pe structură de piață, trend, Smart Money Concepts și controlul riscului.
+    This website is dedicated to the development and presentation of professional
+    MetaTrader 4 Expert Advisors.
     <br><br>
-    Toate sistemele sunt dezvoltate și testate riguros, cu scop educațional și de cercetare.
+    The focus is on market structure, trend confirmation, Smart Money Concepts
+    and strict risk control. All systems are developed and tested for educational
+    and research purposes.
   </p>
 </section>
 
-<!-- EA -->
+<!-- EA SECTION -->
 <section>
   <h2>Expert Advisors</h2>
 
   <div class="ea-grid">
-
     <div class="ea-card">
-  <div class="lock">🔐</div>
+      <div class="lock">🔐</div>
+      <h3>Private MT4 Expert Advisor</h3>
 
-  <h3>Private MT4 Expert Advisor</h3>
+      <p>
+        This Expert Advisor is provided in <strong>TRIAL mode</strong> and requires
+        <strong>manual activation</strong>.
+        <br><br>
+        To receive an activation code, please send:
+        <br>• Broker name
+        <br>• Account number
+        <br><br>
+        After verification, an activation code will be sent via email.
+      </p>
 
-  <p>
-    This Expert Advisor is provided in <strong>TRIAL mode</strong> and requires
-    <strong>manual activation</strong>.
-    <br><br>
-    To receive an activation code, please send:
-    <br>• Broker name  
-    <br>• Account number
-    <br><br>
-    After verification, an activation code will be sent via email.
-  </p>
+      <a
+        href="downloads/EA_TRIAL.ex4"
+        class="btn"
+        onclick="gtag('event','download',{'event_category':'EA','event_label':'Trial Download'});"
+      >
+        Download Trial (Activation Required)
+      </a>
 
-  <a 
-    href="downloads/EA_TRIAL.ex4"
-    class="btn"
-    onclick="gtag('event','download',{'event_category':'EA','event_label':'Trial Download'});"
-  >
-    Download Trial (Activation Required)
-  </a>
+      <p style="margin-top:12px;font-size:13px;color:#999;">
+        Contact: <a href="mailto:sorin_orry@yahoo.com">sorin_orry@yahoo.com</a>
+      </p>
+    </div>
+  </div>
+</section>
 
-  <p style="margin-top:12px;font-size:13px;color:#999;">
-    Contact: <a href="mailto:sorin_orry@yahoo.com">sorin_orry@yahoo.com</a>
-  </p>
-</div>
-<section style="max-width:800px;margin:40px auto;text-align:center;color:#ccc;">
-
-  <h3 style="color:#d4af37;margin-bottom:15px;">
-    How Trial Activation Works
-  </h3>
-
+<!-- HOW IT WORKS -->
+<section class="info">
+  <h3>How Trial Activation Works</h3>
   <p style="line-height:1.6;">
     1. Download the trial version of the Expert Advisor.<br>
     2. Attach the EA to a <strong>demo account</strong> in MetaTrader 4.<br>
@@ -243,38 +253,30 @@ footer {
     4. Contact us via email with your details.<br>
     5. You will receive an activation code to enable the trial.
   </p>
-
-  <p style="margin-top:20px;font-size:14px;color:#999;">
-    The trial version is intended for evaluation purposes only.
-  </p>
-
-</section>
-
-
-  </div>
 </section>
 
 <!-- ROADMAP -->
 <section class="roadmap">
-  <h2>Ce urmează</h2>
+  <h2>Roadmap</h2>
   <ul>
-    <li>Mai multe EA-uri disponibile în versiune trial</li>
-    <li>Documentație și ghiduri clare</li>
-    <li>Feedback & reviews de la utilizatori</li>
-    <li>Acces premium pentru versiuni complete</li>
+    <li>Additional Expert Advisors released in trial mode</li>
+    <li>Clear documentation and usage guides</li>
+    <li>User feedback and performance reviews</li>
+    <li>Premium access to full versions</li>
   </ul>
 </section>
 
 <!-- CONTACT -->
 <section class="contact">
   <h2>Contact</h2>
-  <p>Pentru întrebări, feedback sau colaborări:</p>
-  <a href="mailto:sorin_orry@yahoo.com">sapori.sorin@gmail.com</a>
+  <p>For questions, feedback or collaboration:</p>
+  <a href="mailto:sorin_orry@yahoo.com">sorin_orry@yahoo.com</a>
 </section>
 
 <footer>
-  ⚠️ Tradingul implică risc. Materialele sunt oferite exclusiv în scop educațional.
+  ⚠️ Trading involves risk. All materials are provided for educational purposes only.
 </footer>
 
 </body>
 </html>
+
